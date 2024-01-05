@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <section id="loadingContainer">
+        <h2>Fetching Forecast<span id="loadingDots"></span></h2>
+        <h3 id="loadingText"></h3>
+    </section>
+    <section id="blue"></section>
+    <section id="red"></section>
+    <h1 id="heading">Powered by Timswebb</h1>
+    <section id="containerBackground">
+        <section id="container">
+            <input type="text" id="cityInput" name="cityInput" placeholder="Enter a city ...">
+            <p><i title="Precipitation" class="wi wi-raindrops"></i><span id="precipText"></span></p>
+            <p><i title="City, Country" class="fas fa-map-pin"></i><span id="locationText"></span></p>
+            <p><i title="Temperature" class="fas fa-temperature-empty"></i><span id="tempText"></span></p>
+            <p><i title="Temperature feels like" class="fas fa-head-side-virus"></i><span id="feelingText"></span></p>
+            <p><i title="UV-Index" class="wi wi-day-sunny"></i><span id="uvText"></span></p>
+            <p><i title="Sunrise" class="wi wi-sunrise"></i><span id="sunriseText"></span></p>
+            <p><i title="Sunset" class="wi wi-sunset"></i><span id="sunsetText"></span></p>
+            <p><i title="Humidity" class="wi wi-humidity"></i><span id="humidityText"></span></p>
+            <p><i title="Atmospheric pressure" class="wi wi-barometer"></i><span id="pressureText"></span></p>
+            <p><i title="Wind speed, Wind direction" class="wi wi-strong-wind"></i><span id="windText"></span></p>
+            <p><i title="Weather description" class="fas fa-cloud-sun-rain"></i><span id="descText"></span></p>
+        </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
